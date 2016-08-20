@@ -9,3 +9,8 @@ function get-datasets() {
         ami list datasets mc15_13TeV.${NUM}%.merge.AOD.$TAGS
     done
 }
+
+function get-datasets-fast() {
+    ami list datasets mc15_13TeV.301%.merge.AOD.$TAGS | grep RS_G
+}
+get-datasets-fast

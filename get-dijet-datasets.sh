@@ -9,3 +9,9 @@ function get-datasets() {
         ami list datasets mc15_13TeV.${NUM}%.merge.AOD.$TAGS
     done
 }
+
+
+function get-datasets-fast() {
+    ami list datasets mc15_13TeV.3610%jetjet%.merge.AOD.$TAGS #| grep jetjet_JZ[0-9]W
+}
+get-datasets-fast
