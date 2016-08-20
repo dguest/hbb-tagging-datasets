@@ -13,6 +13,5 @@ fi
 
 for DS in $(cat $1) ; do
     PARENT=$(get-evt-parent $DS)
-    echo "parent: $PARENT"
     ami -f json show dataset info $PARENT | ./build-ds-entry.py
 done
