@@ -1,0 +1,4 @@
+# ignore text fiels
+*.txt
+# except datast lists
+!*datasets.txt
