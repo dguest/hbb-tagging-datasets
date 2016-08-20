@@ -22,6 +22,7 @@ def run_json(json_string):
 def run():
     for line in sys.stdin:
         run_json(line.strip())
+    sys.stdin.flush()
 
 if __name__ == '__main__':
     run()

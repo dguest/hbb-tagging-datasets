@@ -20,3 +20,4 @@ for line in sys.stdin:
     evt = _get_evt(prov)
     sys.stdout.write(evt[LDN] + '\n')
 
+sys.stdin.flush()
